@@ -1,0 +1,304 @@
+
+:root{
+    --dark-green:rgba(39, 140, 133, 0.8);
+    --dark-orange:rgba(216, 143, 18, 0.8);
+    --dark-blue:rgba(22, 18, 69, 0.8);
+    --red:rgba(219, 33, 43, 0.8);
+    --brown:rgba(38, 2, 4, 0.71);
+    --light-yellow:rgba(72, 72, 10, 0.44);
+}
+body::before{
+    background-color: white;
+    z-index: -1;
+}
+body{
+    font-size: 1em;
+   color:black;
+   margin:auto;
+   padding:0px;
+    font-family: "Raleway","sans-serif";
+    font-weight: 300;
+    
+}
+.menu{
+    position: relative;
+}
+.nav{
+    margin-left: 660px;
+}
+.menu-items a{
+    text-decoration: none;
+    color:black;
+}
+
+.menu-items {
+    display: inline-block;
+    padding-right: 50px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-start;
+    position:fixed;
+    top:0;
+    z-index: 3;
+    background-color: white;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    border-radius: 10px;
+    height: 100px;
+}
+.pd{
+    display: none;
+    list-style-type: none;
+      position: absolute;
+      right :116px;
+        padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 30px 40px rgba(0,0,0,.1);
+} 
+#small:hover .pd{
+    display: block;
+}
+.pd .pd-items{
+    padding:2px;
+    margin:10px;
+}
+#pdp:hover .pd{
+    display: block;
+  
+}  
+#title{
+    width: 150px;
+    height: 50px;
+    background-color: var(--dark-green);
+    border-radius: 20px;
+    text-align: center;
+    margin: 45px;
+    font-family: "Pacifico","sans-serif";
+    color:white;
+    font-size: 1.75em;
+}
+.anh{
+    z-index: -1 ;
+    display: block;
+    margin: 0 auto;
+}
+#membersdis{
+    margin :10px 85px 0px 85px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.name-1{
+    display: flex;
+    flex-direction: row;
+    gap:125px;
+    align-items: center;
+
+}
+.name-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap:210px;
+}
+#home{
+    margin-bottom: 100px;
+}
+.members{
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+    background-color: var(--dark-orange);
+}
+.name{
+    font-size: 1.25em;
+    font-weight: bold;
+    flex-direction: row;
+    align-self: flex-end;
+    
+}
+
+#content{
+    margin-top: 200px;
+}
+.introduction{
+    margin: 50px 200px 0 200px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+#d,
+#doan,
+#hopdong{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:300px;
+    padding:10px;
+    margin-bottom: 45px;
+    background-color: var(--dark-green);
+    color: white;
+    border-radius: 10px;
+}
+#d p{
+    justify-content: flex-end;
+   
+}
+.introduction h1{
+    font-family: "Pacifico",sans-serif;
+    font-size: 4em;
+   
+}
+.intro{
+    word-wrap: break-word;
+    font-size: 1.25em;
+     width: 30vw;
+}
+
+hr{
+    margin-top:45px ;
+    margin-bottom: 45px;
+}
+.project{
+    flex-direction: column;
+    
+}
+.project,
+.tiendoz,
+.bienbanz{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tiendoz,
+.bienbanz{
+    flex-direction: row;
+    width: 80vw;
+}
+ul{
+    list-style-type: none;
+    
+}
+ a  {
+    text-decoration: none;
+}
+
+.intro1{
+    font-family: "Pacifico",sans-serif;
+    font-size: 4em;
+}
+.project img{
+    margin:50px;
+    border-radius: 10px;
+    z-index: -1;
+    
+}
+.tiendo,
+.bienban
+{
+    font-size: 20px;
+}
+.pro1,
+.pro{
+    padding-bottom: 10px;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color:white;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+/*Thiết Lập Cho Thành Phần Nội Dung Giới Thiệu*/
+footer .container .noi-dung{
+    margin-right: 30px;
+}
+footer  .container .noi-dung.about{
+    width:40%;
+}
+footer .container .noi-dung.about h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container .noi-dung.about h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer .container .noi-dung.about p{
+    color: #999;
+}
+/*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
+.social-icon{
+    margin-top: 20px;
+    display: flex;
+}
+.social-icon li {
+    list-style: none;
+}
+.social-icon li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.social-icon li a:hover{
+    background: #f00;
+}
+.social-icon li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.hidden{
+    opacity: 0;
+    transition: all 5s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    filter:blur(0);
+    opacity: 1;
+    transform: translate(0);
+}
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
